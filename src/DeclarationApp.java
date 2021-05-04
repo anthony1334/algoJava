@@ -1,23 +1,31 @@
+import java.util.Scanner;
+
 public class DeclarationApp {
     public static void main(String[] args) {
-     float[] nbr = new float[3];
-     nbr[0]= 4.6f;
-     nbr[1]= 3.4f;
-     nbr[2]= 8.9f;
+        Scanner scanner = new Scanner(System.in);
 
-     String[] produits = new String[3];
-     produits[0]="pomme";
-     produits[1]="poire";
-     produits[2]="fraise";
+        System.out.println("Entrez un nombre");
+        int nbr = scanner.nextInt();
+        System.out.println("Vous avez entré le nombre "+ nbr);
+        if(nbr == 4){
+            System.out.println("***");
+            for (int i = 0; i < nbr; i++) {
+                System.out.println("***");
+            }
+
+            for (int i = 0; i < nbr; i++) {
+                for (int i1 = 0; i1 + i < nbr; i1++) {
+
+                }
+                System.out.println("*");
 
 
 
-         for( int i = 0;i< produits.length; i++) {
-             System.out.println(produits[i]);
-             System.out.println(nbr[i]);
 
-         }
+            }
 
+
+        }
 
 
     }
